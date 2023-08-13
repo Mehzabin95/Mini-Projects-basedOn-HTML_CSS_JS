@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: black;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+/* img {
+  height: 25%;
+  width: 15%;
+} */
+span {
+  background: url("https://cdn4.iconfinder.com/data/icons/essentials-72/24/028_-_Heart-512.png");
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  position: absolute;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  animation: animate 6s linear;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    filter: hue-rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -5000%);
+    opacity: 0;
+    filter: hue-rotate(720deg);
+  }
+}
